@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Management Dashboard</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div id="page_wrapper">
+        <div class="sidebar sidenav" id="sidenav">
+            <button id="nav_collapse_btn"><i class="bx bxs-chevrons-left"></i></button>
+            <div class="content" id="desktop">
+                <div class="profile"> <img src="profile.jpeg" ></div>
+                <h1 class="name">Khushi</h1>
+                <p>Frontend Developer</p>
+                <span class="online">Online</span>
+                <div class="sidemenu">
+                    <ul>
+                        <li><i class="bx bx-folder"></i><a href="#">Work</a></li>
+                        <li><i class="bx bx-briefcase"></i><a href="#">Plan</a></li>
+                        <li><i class="bx bx-rocket"></i><a href="#">Status</a></li>
+                        <li><i class="bx bx-receipt"></i><a href="#">Documents</a></li>
+                        <li><i class="bx bx-user"></i><a href="#">Users</a></li>
+                        <li><i class="bx bx-shopping-bag"></i><a href="#">Settings</a></li>
+                    </ul>
+                </div>
+                <a href="" class="logoutbtn"> <i class="bx bx-power-off"></i>LOGOUT</a>
+            </div>
+
+            <div class="contentmobile" id="mobile">
+                <div> <img src="profile.jpeg" class="img-mobile"></div>
+                <h1 class="name" style="margin-left: -7px;">K</h1>
+                
+                <span class="online">Online</span>
+                <div class="sidemenu">
+                    <ul>
+                        <li><i class="bx bx-folder"></i></li>
+                        <li><i class="bx bx-briefcase"></i></li>
+                        <li><i class="bx bx-rocket"></i></li>
+                        <li><i class="bx bx-receipt"></i></li>
+                        <li><i class="bx bx-user"></i></li>
+                        <li><i class="bx bx-shopping-bag"></i></li>
+                    </ul>
+                </div>
+                <a href="" class="logooutbtn" style="margin-left: -12px; padding: 10px 15px;"> <i class="bx bx-power-off"></i></a>
+            </div>
+        </div>
+
+        <main>
+            <div class="content">
+                <i class="bx bx-download cicon"></i>
+                <i class="bx bx-bell cicon bicon"></i>
+
+                <div class="searchbox">
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search Projects">
+                </div>
+
+                <hr class="hr1" />
+                <div class="project-title">
+                    <div class="col-3">
+                        <h1>Project Title</h1>
+                        <p>Short description</p>
+                    </div>
+                    <div class="col-6"></div>
+                    <h1>DUE DATE</h1>
+                    <p>Sun, May 22, 2023</p>
+                    <div class="col-3"></div>
+                    <img src="profile.jpeg" class="ping" alt="">
+                    <img src="user" class="ping" alt="">
+                    <i class="bx bx-plus cicon picon"></i>
+                </div>
+                <div class="clearfix"></div>
+                <hr class="hr1" style="margin-top: -10px;">
+                <br><br>
+
+                <div class="task-status-div">
+                    <div class="col-4">
+                        <h2>Backlog <i class="bx bxs-chevrons-down"></i></h2>
+                        <div class="task-box">
+                            <h3>Task Name</h3>
+                            <span class="tag">Design</span>
+                            <p>Description</p>
+                            <br>
+                            <p class="taskp">
+                                <img src="user" >&nbsp;&nbsp; 03/05/2023
+                                <span>2Subtasks</span>
+                            </p>
+                        </div>
+
+                        <div class="task-box">
+                            <h3>Task Name</h3>
+                            <span class="tag">Design</span>
+                            <p>Description</p>
+                            <br>
+                            <p class="taskp">
+                                <img src="profile.jpeg" >&nbsp;&nbsp; 03/05/2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h2>In Progress<i class="bx bxs-chevrons-down"></i></h2>
+                        <div class="task-box">
+                            <h3>Task Name</h3>
+                            <span class="tag">Design</span>
+                            <p>Description</p>
+                            <br>
+                            <p class="taskp">
+                                <img src="profile.jpeg" >&nbsp;&nbsp; 03/05/2023
+                            </p>
+                        </div>
+
+                        <div class="task-box">
+                            <h3>Task Name</h3>
+                            <span class="tag">Design</span>
+                            <p>Description</p>
+                            <br>
+                            <p class="taskp">
+                                <img src="user" >&nbsp;&nbsp; 03/05/2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h2>Review<i class="bx bxs-chevrons-down"></i></h2>
+                        <div class="task-box">
+                            <h3>Task Name</h3>
+                            <span class="tag">Design</span>
+                            <p>Description</p>
+                            <br>
+                            <p class="taskp">
+                                <img src="user" >&nbsp;&nbsp; 03/05/2023
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <h2>Backlog <i class="bx bxs-chevrons-down"></i></h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
