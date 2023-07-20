@@ -67,23 +67,28 @@
                     <p>Sun, May 22, 2023</p>
                     <div class="col-3"></div>
                     <img src="profile.jpeg" class="ping" alt="">
-                    <img src="user" class="ping" alt="">
+                    <img src="user.jpg" class="ping" alt="">
                     <i class="bx bx-plus cicon picon"></i>
                 </div>
                 <div class="clearfix"></div>
                 <hr class="hr1" style="margin-top: -10px;">
                 <br><br>
-
+                <div class="btn-div">
+                    <button>CREATE NEW TICKET</button>
+                    <button>Add column</button>
+                </div>
+                <div class="clearfix"></div>
+                <br><br>
                 <div class="task-status-div">
                     <div class="col-4">
-                        <h2>Backlog <i class="bx bxs-chevrons-down"></i></h2>
+                        <h2>Backlog <i class="bx bxs-chevron-down"></i></h2>
                         <div class="task-box">
                             <h3>Task Name</h3>
                             <span class="tag">Design</span>
                             <p>Description</p>
                             <br>
                             <p class="taskp">
-                                <img src="user" >&nbsp;&nbsp; 03/05/2023
+                                <img src="user.jpg" >&nbsp;&nbsp; 03/05/2023
                                 <span>2Subtasks</span>
                             </p>
                         </div>
@@ -99,7 +104,7 @@
                         </div>
                     </div>
                     <div class="col-4">
-                        <h2>In Progress<i class="bx bxs-chevrons-down"></i></h2>
+                        <h2>In Progress<i class="bx bxs-chevron-down"></i></h2>
                         <div class="task-box">
                             <h3>Task Name</h3>
                             <span class="tag">Design</span>
@@ -116,28 +121,50 @@
                             <p>Description</p>
                             <br>
                             <p class="taskp">
-                                <img src="user" >&nbsp;&nbsp; 03/05/2023
+                                <img src="user.jpg" >&nbsp;&nbsp; 03/05/2023
                             </p>
                         </div>
                     </div>
                     <div class="col-4">
-                        <h2>Review<i class="bx bxs-chevrons-down"></i></h2>
+                        <h2>Review<i class="bx bxs-chevron-down"></i></h2>
                         <div class="task-box">
                             <h3>Task Name</h3>
                             <span class="tag">Design</span>
                             <p>Description</p>
                             <br>
                             <p class="taskp">
-                                <img src="user" >&nbsp;&nbsp; 03/05/2023
+                                <img src="user.jpg" >&nbsp;&nbsp; 03/05/2023
                             </p>
                         </div>
                     </div>
                     <div class="col-4">
-                        <h2>Backlog <i class="bx bxs-chevrons-down"></i></h2>
+                        <h2>Backlog <i class="bx bxs-chevron-down"></i></h2>
                     </div>
                 </div>
             </div>
         </main>
     </div>
+
+    <script type="text/javascript">
+        let wholepage = document.getElementById('page_wrapper');
+        let btn = document.getElementById('nav_collapse_btn');
+        let mb = document.getElementById('mobile');
+        let ds = document.getElementsById('desktop');
+
+        btn.addEventListener('click', collapse);
+        function collapse(){
+            wholepage.classList.toggle('collapsed');
+            if(wholepage.classList.contains('collapsed')){
+                btn.innerHTML = "<i class = 'bx bxs-chevrons-right'></i>";
+                mb.style.display = "block";
+                ds.style.display = "none";
+            }
+            else{
+                btn.innerHTML = "<i class = 'bx bxs-chevrons-left'></i>";
+                mb.style.display = "none";
+                ds.style.display = "block";
+            }
+        }
+    </script>
 </body>
 </html>
